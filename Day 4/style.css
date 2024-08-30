@@ -1,0 +1,16 @@
+.myheading{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
+
+.button-div{
+    text-align: center;
+}
+
+.button-div a{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}

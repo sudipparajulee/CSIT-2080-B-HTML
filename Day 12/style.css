@@ -1,0 +1,384 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.gotop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.gotop a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(49, 49, 134);
+}
+
+.topbar{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgb(206, 200, 200);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.banner{
+    background-image: url('images/banner.jpg');
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-inner{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(13, 13, 40, 0.611);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2{
+    font-size: 60px;
+    color: white;
+}
+
+.get-started{
+    background-color: rgb(134, 49, 49);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.notice{
+    display: flex;
+    align-items: center;
+}
+
+.notice p{
+    padding: 10px 30px;
+    background-color: rgb(49, 49, 134);
+    margin: 0;
+    color: white;
+}
+
+.notice marquee{
+    flex: 1;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background-color: #f4f4f4;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 150px;
+    padding: 0;
+    list-style-type: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+}
+
+.support-btn{
+    text-decoration: none;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.title-section{
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 150px;
+}
+
+.title-section-inner{
+    padding: 20px 40px;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(68, 23, 23, 0.603);
+    color: white;
+}
+
+.product-section{
+    padding: 20px 40px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title p{
+    margin-top: -14px;
+    color: #aaa;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px 40px;
+}
+
+.product img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product{
+    background-color: rgb(237, 238, 238);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(206, 200, 200);
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+}
+
+.product:hover{
+    box-shadow: 0px 2px 8px rgb(183, 169, 169);
+    /* transform: translateY(-5px); */
+    transform: scale(1.03);
+}
+
+.product p{
+    font-size: 12px;
+    color: #333;
+}
+
+.product h3{
+    font-size: 16px;
+    color: #333;
+}
+
+.discount{
+    background-color: yellowgreen;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn a{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 100px;
+    gap: 25px;
+}
+
+.about-content{
+    text-align: justify;
+}
+
+.about-content a{
+    text-decoration: none;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(19, 19, 91, 0.733);
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.cross{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: rgb(216, 216, 217);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.popup-content a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.contact-info p{
+    color: #666;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+}
+
+.contact-form input[type="submit"]{
+    background-color: rgb(49, 49, 134);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #b53030;
+    color: white;
+}
+
+.contact-details p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact-details a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 49, 134);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.footer-section{
+    background-color: #f4f4f4;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px 60px;
+}
+
+.footer-col ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-col li{
+    padding: 5px 0;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #333;
+}
+
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 134);
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+}
+
+.lower-footer a{
+    color: white;
+}

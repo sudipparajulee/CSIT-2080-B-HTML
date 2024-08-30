@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h3>Arithmetic Operation</h3>
+        <input type="text" placeholder="Enter First Number" id="num1">
+        <input type="text" placeholder="Enter Second Number" id="num2">
+        <button onclick="sum()">SUM</button>
+        <button onclick="sub()">Subtract</button>
+        <h2 id="result"></h2>
+
+        <script>
+            function sum()
+            {
+                let num1 = document.getElementById('num1').value;
+                let num2 = document.getElementById('num2').value;
+                let sum = parseInt(num1) + parseInt(num2);
+                document.getElementById('result').innerHTML = 'The sum is '+sum;
+            }
+
+            function sub()
+            {
+                let num1 = document.getElementById('num1').value;
+                let num2 = document.getElementById('num2').value;
+                let sub = parseInt(num1) - parseInt(num2);
+                document.getElementById('result').innerHTML = 'The subtraction is '+sub;
+            }
+
+            function mul()
+            {
+                let num1 = document.getElementById('num1').value;
+                let num2 = document.getElementById('num2').value;
+                let mul = parseInt(num1) * parseInt(num2);
+                document.getElementById('result').innerHTML = 'The multiplication is '+mul;
+            }
+
+            function div()
+            {
+                let num1 = document.getElementById('num1').value;
+                let num2 = document.getElementById('num2').value;
+                let div = parseInt(num1) / parseInt(num2);
+                document.getElementById('result').innerHTML = 'The division is '+div;
+            }
+        </script>
+    </body>
+</html>

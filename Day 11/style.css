@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+}
+
+.myform{
+    width: 350px;
+    background-color: rgb(180, 212, 239);
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 1px 2px 8px lightgray;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.myform input{
+    display: block;
+    margin: 10px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+
+.myform input[type=submit]{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.myform input[type=submit]:hover{
+    background-color: rgb(37, 37, 183);
+}
+
+.myform input:focus{
+    outline: 2px solid red;
+    /* outline: none; */
+}
