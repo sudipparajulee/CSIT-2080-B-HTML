@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <style>
+            #progressbar{
+                background-color: rgb(103, 141, 174);
+                width: 500px;
+                border-radius: 8px;
+            }
+            #progress{
+                width: 65%;
+                background-color: green;
+                text-align: center;
+                border-radius: 8px;
+                padding: 5px;
+                color: white;
+                transition: 0.3s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="progressbar">
+            <div id="progress">65%</div>
+        </div>
+        <button id="animate">Animate</button>
+
+        <script>
+            let progress = document.getElementById('progress');
+            document.getElementById('animate').addEventListener('click',function(){
+                progress.style.width = '5%';
+                progress.innerHTML = '5%';
+                let p = 5;
+                let counter = setInterval(progressfn,200);
+                function progressfn(){
+                    progress.style.width = p+'%';
+                    progress.innerHTML = p+'%';
+                    p++;
+                    if(p>65)
+                    {
+                        clearInterval(counter);   
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
